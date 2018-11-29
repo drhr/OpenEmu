@@ -31,6 +31,7 @@
 @class OEDBGame;
 @class OEDBSaveState;
 @class OEDBScreenshot;
+@class OEDBCheat;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -94,6 +95,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Data Model Relationships
 
+@property(nullable, nonatomic, retain) NSMutableSet *mutableCheats;
 @property(nonatomic, readonly, nullable) NSMutableSet    *mutableSaveStates;
 @property(nonatomic, retain)   NSManagedObject *tosec;
 @end

@@ -49,7 +49,8 @@ import Foundation
 @objc(OECheats)
 @objcMembers
 class Cheats: NSObject, XMLParserDelegate {
-    
+
+    // Dictionary of arrays of cheats
     private(set) var allCheats = [NSMutableDictionary]()
     private var didFindMD5Hash = false
     private let md5Hash: String
@@ -75,7 +76,26 @@ class Cheats: NSObject, XMLParserDelegate {
         parser.delegate = self
         
         parser.parse()
+
+
+        // TODO(Dan): Read from local user-defined file
+
     }
+    
+    // Adds a user-defined cheat
+    func addCheat(code: String, title: String) {
+        // TODO(Dan): write to user-defined file for this game.
+        // TODO(Dan): add cheat
+        
+        
+        // see OEGameDocument.m:1119 for how they're adding an object
+        // and see here too for how it's parsed originally.
+    }
+    
+    // TODO(Dan): edit cheat               ? add/edit cheat
+    
+    
+    
     
     // MARK: - XMLParserDelegate
     

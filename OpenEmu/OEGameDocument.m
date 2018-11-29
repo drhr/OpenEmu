@@ -31,6 +31,7 @@
 #import "OECorePlugin.h"
 #import "OECoreUpdater.h"
 #import "OEDBRom.h"
+#import "OEDBCheat.h"
 #import "OEDBGame.h"
 #import "OEDBSaveState.h"
 #import "OEDBSystem.h"
@@ -1069,9 +1070,57 @@ typedef enum : NSUInteger
 
 #pragma mark - Cheats
 
+- (void)OE_loadCheats:(void(^)(NSMutableSet<OEDBCheat *> *cheats))block
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        OEDBRom *rom = [[[self gameViewController] document] rom];
+        
+        NSSet<OEDBCheat *> *cheatz = [NSSet setWithArray:[[rom cheats] allObjects]];
+        
+        //        NSMutableSet<OEDBCheat *> *cheats = [NSMutableSet new];
+        
+        // TODO: load user-edited from CoreData
+        //        NSFetchRequest *fetchRequest =
+        
+        // TODO: load pre-canned from XML
+        
+        
+        // TODO: include sample code to load from an external database, based on some conditions (only do it once per rom load)
+        
+        
+        if([[self gameViewController] supportsCheats])
+        {
+            NSString *md5Hash = [[[[self gameViewController] document] rom] md5Hash];
+            if(md5Hash)
+            {
+                OECheats *cheatsXML = [[OECheats alloc] initWithMd5Hash:md5Hash];
+                //            _cheats             = [[cheatsXML allCheats] mutableCopy];
+                //            _cheatsLoaded       = YES;
+                
+                //                cheats addOb
+                //                [cheats addObject: ];
+            }
+        }
+        
+        
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //            block(cheats);
+        });
+    });
+}
+
 - (BOOL)supportsCheats
 {
     return [[[_gameCoreManager plugin] controller] supportsCheatCodeForSystemIdentifier:[_systemPlugin systemIdentifier]];
+}
+
+- (IBAction)manageCheats:(id)sender;
+{
+    // TODO: Open a modal view controller with CRUD controls on the currently open rom.
+    
+    // TODO: Invalidate OEGameControlsBar.cheatsLoaded if Rom's cheat list is edited.
 }
 
 - (IBAction)addCheat:(id)sender;

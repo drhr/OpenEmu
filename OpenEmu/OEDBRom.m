@@ -44,6 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 @dynamic URL;
 
 // Data Model Relationships
+@dynamic mutableCheats;
 @dynamic tosec;
 
 #pragma mark -
@@ -374,6 +375,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSEntityDescription *)entityDescriptionInContext:(NSManagedObjectContext *)context
 {
     return [NSEntityDescription entityForName:[self entityName] inManagedObjectContext:context];
+}
+
+- (nullable NSMutableSet <OEDBCheat *> *)mutableCheats
+{
+    return [self mutableSetValueForKey:@"cheats"];
 }
 
 - (nullable NSMutableSet <OEDBSaveState *> *)mutableSaveStates

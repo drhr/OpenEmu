@@ -43,6 +43,7 @@ enum _OEGameDocumentErrorCodes
 @class OECorePlugin;
 @class OEDBGame;
 @class OEDBRom;
+@class OEDBCheat;
 @class OEDBSaveState;
 @class OEGameViewController;
 @class OESystemPlugin;
@@ -93,6 +94,8 @@ enum _OEGameDocumentErrorCodes
 - (IBAction)stopEmulation:(id)sender;
 
 #pragma mark - Cheats
+- (void)OE_loadCheats:(void(^)(NSMutableSet<OEDBCheat *> *cheats))block;
+- (IBAction)manageCheats:(id)sender;
 - (IBAction)addCheat:(id)sender;
 - (IBAction)setCheat:(id)sender;
 - (IBAction)toggleCheat:(id)sender;

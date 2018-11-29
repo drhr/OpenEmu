@@ -163,6 +163,11 @@ NSString *const OEGameControlsBarShowsAudioOutput       = @"HUDBarShowAudioOutpu
 #pragma mark - Cheats
 - (void)OE_loadCheats
 {
+    [[[self gameViewController] document] OE_loadCheats:^(NSMutableSet<OEDBCheat *> *cheats) {
+        
+    }];
+    
+    
     // In order to load cheats, we need the game core to be running and, consequently, the ROM to be set.
     // We use -reflectEmulationRunning:, which we receive from OEGameViewController when the emulation
     // starts or resumes
@@ -351,11 +356,17 @@ NSString *const OEGameControlsBarShowsAudioOutput       = @"HUDBarShowAudioOutpu
     if([[self gameViewController] supportsCheats])
     {
         NSMenu *cheatsMenu = [[NSMenu alloc] init];
-        [cheatsMenu setTitle:NSLocalizedString(@"Select Cheat", @"")];
+        [cheatsMenu setTitle:NSLocalizedString(@"Edit Cheat", @"")]; // TODO: Localize
         item = [[NSMenuItem alloc] init];
-        [item setTitle:NSLocalizedString(@"Select Cheat", @"")];
+        [item setTitle:NSLocalizedString(@"Edit Cheat", @"")];  // TODO: Localize
         [menu addItem:item];
         [item setSubmenu:cheatsMenu];
+        
+        NSMenuItem *manageCheatMenuItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Manage Cheats…", @"")
+                                                                     action:@selector(manageCheats:)
+                                                              keyEquivalent:@""];
+//        [manageCheatMenuItem setRepresentedObject:_cheats];
+        [cheatsMenu addItem:manageCheatMenuItem];
 
         NSMenuItem *addCheatMenuItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Add Cheat…", @"")
                                                                   action:@selector(addCheat:)

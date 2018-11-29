@@ -20,3 +20,6 @@ xcuserdata/
 profile
 *.moved-aside
 DerivedData/
+
+# AppCode
+**/.idea/

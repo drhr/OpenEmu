@@ -293,6 +293,7 @@
 		5AC349331D89EB7B0089B26F /* GameIntegralScalingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC349321D89EB7B0089B26F /* GameIntegralScalingDelegate.swift */; };
 		5AECA1491BE1D25800C3B4E2 /* ToolbarSegmentedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AECA1481BE1D25800C3B4E2 /* ToolbarSegmentedCell.swift */; };
 		5AFD06BD2058893B00DFE765 /* GameScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD06BC2058893B00DFE765 /* GameScannerViewController.swift */; };
+		8016D3BA2070993500D327BB /* OEDBCheat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8016D3B62070993400D327BB /* OEDBCheat.m */; };
 		820EB7421483F9A2008EC398 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6711810136368330034379A /* Cocoa.framework */; };
 		82277547148946DF00B19E27 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6711810136368330034379A /* Cocoa.framework */; };
 		8227756B1489471A00B19E27 /* OEGGSystemResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8227755C1489471A00B19E27 /* OEGGSystemResponder.m */; };
@@ -1655,17 +1656,17 @@
 		1E4B6B4C10DEBB4500B2CD45 /* SUVersionComparisonProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SUVersionComparisonProtocol.h; path = Sparkle.framework/Headers/SUVersionComparisonProtocol.h; sourceTree = "<group>"; };
 		1EA4404711973E9C001D71CA /* OEGameQuickLookDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEGameQuickLookDocument.h; sourceTree = "<group>"; };
 		1EA4404811973E9C001D71CA /* OEGameQuickLookDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEGameQuickLookDocument.m; sourceTree = "<group>"; };
-		2205C355196204A60013C675 /* _hq2x.cg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _hq2x.cg; sourceTree = "<group>"; };
+		2205C355196204A60013C675 /* _hq2x.cg */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text; path = _hq2x.cg; sourceTree = "<group>"; };
 		2205C356196204A60013C675 /* _hq2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _hq2x.png; sourceTree = "<group>"; };
-		2205C357196204A60013C675 /* _hq3x.cg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _hq3x.cg; sourceTree = "<group>"; };
+		2205C357196204A60013C675 /* _hq3x.cg */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text; path = _hq3x.cg; sourceTree = "<group>"; };
 		2205C358196204A60013C675 /* _hq3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _hq3x.png; sourceTree = "<group>"; };
-		2205C359196204A60013C675 /* _hq4x.cg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _hq4x.cg; sourceTree = "<group>"; };
+		2205C359196204A60013C675 /* _hq4x.cg */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text; path = _hq4x.cg; sourceTree = "<group>"; };
 		2205C35A196204A60013C675 /* _hq4x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _hq4x.png; sourceTree = "<group>"; };
-		2205C35B196204A60013C675 /* _pass1.cg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _pass1.cg; sourceTree = "<group>"; };
-		2205C35C196204A60013C675 /* _pass2.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = _pass2.inc; sourceTree = "<group>"; };
-		2205C35D196204A60013C675 /* HQ2x.cgp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HQ2x.cgp; sourceTree = "<group>"; };
-		2205C35E196204A60013C675 /* HQ3x.cgp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HQ3x.cgp; sourceTree = "<group>"; };
-		2205C35F196204A60013C675 /* HQ4x.cgp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HQ4x.cgp; sourceTree = "<group>"; };
+		2205C35B196204A60013C675 /* _pass1.cg */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text; path = _pass1.cg; sourceTree = "<group>"; };
+		2205C35C196204A60013C675 /* _pass2.inc */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = sourcecode.pascal; path = _pass2.inc; sourceTree = "<group>"; };
+		2205C35D196204A60013C675 /* HQ2x.cgp */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text; path = HQ2x.cgp; sourceTree = "<group>"; };
+		2205C35E196204A60013C675 /* HQ3x.cgp */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text; path = HQ3x.cgp; sourceTree = "<group>"; };
+		2205C35F196204A60013C675 /* HQ4x.cgp */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text; path = HQ4x.cgp; sourceTree = "<group>"; };
 		2205C376196402B50013C675 /* OELUTTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OELUTTexture.h; sourceTree = "<group>"; };
 		2205C377196402B50013C675 /* OELUTTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OELUTTexture.m; sourceTree = "<group>"; };
 		277CBA4519DE54200059A2C1 /* Intellivision.oesystemplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Intellivision.oesystemplugin; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1686,7 +1687,7 @@
 		2A37F4AEFDCFA73011CA2CEA /* OEGameDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEGameDocument.h; sourceTree = "<group>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* OpenEmu_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenEmu_Prefix.pch; sourceTree = "<group>"; };
-		375903750FF82C4000135C45 /* openemuqc_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = openemuqc_pub.pem; sourceTree = "<group>"; };
+		375903750FF82C4000135C45 /* openemuqc_pub.pem */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text; path = openemuqc_pub.pem; sourceTree = "<group>"; };
 		37CC66190FF8379B00226BCB /* config_qc.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config_qc.yaml; sourceTree = "<group>"; };
 		3887A7F61024D1F9000FC4CF /* OESaveStateQLPlugin.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OESaveStateQLPlugin.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		3887A8021024D2BC000FC4CF /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
@@ -1874,6 +1875,9 @@
 		7699EC921D6303EB005BC437 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7699EC931D6303EC005BC437 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7699EC941D6303EC005BC437 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/ControlLabels.strings; sourceTree = "<group>"; };
+		8016D3B22070844B00D327BB /* OEDatabase 1.4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "OEDatabase 1.4.xcdatamodel"; sourceTree = "<group>"; };
+		8016D3B62070993400D327BB /* OEDBCheat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OEDBCheat.m; path = "/Users/danharris/Documents/workspace/Personal/OpenEmu-drhr/OpenEmu/OpenEmu/OEDBCheat.m"; sourceTree = "<absolute>"; };
+		8016D3B82070993500D327BB /* OEDBCheat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OEDBCheat.h; path = "/Users/danharris/Documents/workspace/Personal/OpenEmu-drhr/OpenEmu/OpenEmu/OEDBCheat.h"; sourceTree = "<absolute>"; };
 		820EB74A1483F9A2008EC398 /* NeoGeo Pocket.oesystemplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NeoGeo Pocket.oesystemplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		820EB74E1483F9D3008EC398 /* controller_ngp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = controller_ngp.png; sourceTree = "<group>"; };
 		820EB7541483F9D3008EC398 /* OENGPSystemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OENGPSystemController.h; sourceTree = "<group>"; };
@@ -3955,6 +3959,8 @@
 				838AC27F14434EED00AC74C3 /* OEDBRom.m */,
 				83633445195D798600470AB8 /* OEDBScreenshot.h */,
 				83633446195D798600470AB8 /* OEDBScreenshot.m */,
+				8016D3B82070993500D327BB /* OEDBCheat.h */,
+				8016D3B62070993400D327BB /* OEDBCheat.m */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -7925,6 +7931,7 @@
 				5A3DB1B11D8E6806009445EC /* AppDelegate.swift in Sources */,
 				83CA87B41961CDD400D86D55 /* 1.2 to 1.3.xcmappingmodel in Sources */,
 				83F7DBAF18C0E2470029199C /* OEFileManager.m in Sources */,
+				8016D3BA2070993500D327BB /* OEDBCheat.m in Sources */,
 				EF2FDBEB14CFFE06002A64F2 /* OEControlsKeyButton.m in Sources */,
 				EF2FDBED14CFFE1B002A64F2 /* OEControlsKeySeparatorView.m in Sources */,
 				1B6DA4A914DDE6A40067F7F6 /* OESetupAssistantQCOpenGLLayer.m in Sources */,
@@ -11645,6 +11652,7 @@
 		C68A54E41516AD3C001053F2 /* OEDatabase.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				8016D3B22070844B00D327BB /* OEDatabase 1.4.xcdatamodel */,
 				83D175B918FF218200E5ED34 /* OEDatabase 1.2.xcdatamodel */,
 				8393FD33195D71B50021D3D9 /* OEDatabase 1.3.xcdatamodel */,
 				942388B218922E2E0030A325 /* OEDatabase 1.1.xcdatamodel */,
@@ -11655,7 +11663,7 @@
 				8353EB1A15FF41930026E326 /* OEDatabase 0.2.xcdatamodel */,
 				C68A54E51516AD3C001053F2 /* OEDatabase.xcdatamodel */,
 			);
-			currentVersion = 8393FD33195D71B50021D3D9 /* OEDatabase 1.3.xcdatamodel */;
+			currentVersion = 8016D3B22070844B00D327BB /* OEDatabase 1.4.xcdatamodel */;
 			path = OEDatabase.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
